@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: rgb(29, 28, 28);
+    /* max-width: 900px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    
+}
+.assessment{
+    /* border: 3px solid darkgray; */
+    margin-top: 100px;
+}
+.assessment img{
+    margin: auto;
+    margin-left: 32%;
+    width: 36%;
+}
+.assessment img:hover{
+    cursor: grab;
+    transition: 150ms;
+    transform: scale(1.1);
+}
+.assessment .assessment-container{
+    /* border: 3px solid darkgray; */
+    margin: 2%;
+}
+.assessment .assessment-container .timer{
+    background-color: darkgray;
+    width: 10%;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    border: 4px solid gray;
+    border-radius: 40px;
+    float: right;
+    margin-right: 7%;
+}
+.assessment .assessment-container .timer:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.05);
+
+}
+.assessment .assessment-container p{
+    color: white;
+    font-size: 30px;
+    margin-top: -3px;
+    margin-left: 5% ;
+}
+.assessment .assessment-container #answer-form{
+    color: white;
+    font-size: 20px;
+}
+.assessment .assessment-container #answer-form{
+    margin-left: 5%;
+}
+.assessment .assessment-container #radio-btn:hover{
+    cursor: pointer;
+}
+.assessment .assessment-container #submit-btn{
+    background-color: darkgray;
+    width: 10%;
+    text-align: center;
+    height: 40px;
+    border: 4px solid gray;
+    border-radius: 40px;
+    margin: 20px 0 5px;
+    margin-left: 45%;
+    font-size: 20px;
+}
+.assessment .assessment-container #submit-btn:hover{
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.05);
+    background-color: gray;
+}
+
+.congratulations{
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .assessment .assessment-container #submit-btn{
+        width:20%;
+    }
+}
+@media (max-width: 400px) {
+    .assessment .assessment-container #submit-btn{
+        width:25%;
+    }
+}
+@media (max-width: 400px) {
+    .assessment .assessment-container .timer{
+        border-style: none;
+        width: 15%;
+    }
+}
+@media (min-width: 1000px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .assessment{
+        width: 1000px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+    }
+}

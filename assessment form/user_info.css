@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(29, 28, 28);
+}
+.container{
+    border: 10px solid gray;
+    border-radius: 18px;
+    width: 50%;
+    margin: 100px auto 0;
+    background-color: rgb(29, 28, 28);
+}
+.container img{
+    margin: auto;
+    margin-left: 32%;
+    width: 36%;
+}
+.container img:hover{
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.05);
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+h1 span{
+    color: rgb(102, 4, 4);
+    text-align: center;
+    margin-top: 20px;
+}
+h1 span:hover{
+    cursor: pointer;
+}
+form{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+    color: #ffffff;
+    font-family:sans-serif;
+}
+.username{
+    margin-top: 30px;
+}
+form .username #userName {
+    border-style: none;
+    outline: none;
+    width: 45%;
+    font-size: 25px;
+    /* height: 45px; */
+    border-bottom: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: transparent;
+}
+form .password #password{
+    border-style: none;
+    outline: none;
+    width: 45%;
+    font-size: 25px;
+    /* height: 45px; */
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: -10px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: transparent;
+    -webkit-text-security: circle;
+}
+form button{
+    margin: 40px auto 40px;
+    width: 30%;
+    margin-left: 32%;
+    font-size: 20px;
+    background-color: darkgray;
+    border: 4px solid gray;
+    outline: none;
+    color: white;
+    height: 50px;
+    border-radius: 50px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+form button:hover{
+    border-style: none;
+    background-color: gray;
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.05);
+}
+@media (max-width: 1000px) {
+    /* form{
+        font-size: 18px;
+    }
+    form .username #userName{
+        font-size: 18px;
+    }
+    form .password #password{
+        font-size: 18px;
+        width: 40%;
+    } */
+    .container{
+        width: 75%;
+    }
+}
+@media (max-width: 650px) {
+    /* h1{
+        font-size: 20px;
+    }
+    form{
+        font-size: 11px;
+    }
+    form .username #userName{
+        font-size: 11px;
+    }
+    form .password #password{
+        font-size: 11px;
+        width: 40%;
+    }
+    form button{
+        font-size: 14px;
+        height: 30px;
+    } */
+    .container{
+        width: 90%;
+        border-style: none;
+    }
+}
+@media (max-width: 475px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    form .password #password{
+        /* font-size: 11px; */
+        width: 40%;
+    }
+}
+@media (max-width: 400px) {
+    *{
+        font-size: 20px;
+    }
+}
+@media (min-width: 900px) {
+    body{
+        /* width: 1500px; */
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        width: 900px;
+    }
+    .container img{
+    margin: auto;
+    /* margin-left: 25%; */
+    width: 50%;
+    }
+}

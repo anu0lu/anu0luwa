@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(29, 28, 28);
+    position: fixed;
+}
+.container{
+    border: 10px solid gray;
+    border-radius: 18px;
+    width: 50%;
+    margin: 100px auto 0;
+}
+.container img{
+    margin: auto;
+    margin-left: 32%;
+    width: 36%;
+}
+.container img:hover{
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.1);
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+h1 span{
+    color: rgb(102, 4, 4);
+    text-align: center;
+}
+h1 span:hover{
+    cursor: pointer;
+}
+.container .confirm-choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.container .confirm-choice a{
+    text-decoration: none;
+    color: black;
+    /* height: 50px; */
+    font-size: 20px;
+    background-color: darkgray;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 20px;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+.container .confirm-choice a span{
+    color: rgb(102, 4, 4);
+}
+.container .confirm-choice a:hover{
+    cursor: grab;
+    transition: 150ms;
+    transform: scale(1.1);
+    background-color: gray;
+}
+
+
+
+@media (max-width: 1000px) {
+    .container{
+        width: 75%;
+        border-style: none;
+    }
+}
+@media (max-width: 650px) {
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width: 475px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    form .password #password{
+        width: 40%;
+    }
+}
+@media (max-width: 400px) {
+    *{
+        font-size: 20px;
+    }
+}
+@media (min-width: 750px) {
+    body{
+        /* width: 1500px; */
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        width: 750px;
+    }
+    .container img{
+    margin: auto;
+    /* margin-left: 25%; */
+    width: 50%;
+    }
+}

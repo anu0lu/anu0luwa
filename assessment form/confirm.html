@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm request</title>
+    <link rel="stylesheet" href="confirm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="TheTrybe-logo.png">
+        <h1>How well do you know <span style="font-family: Roboto; font-weight: 700">TheTrybe</span>?</h1>
+        <div class="confirm-choice">
+            <a href="#" class="yes" onclick="confirm()">I know alot about <span style="font-family: Roboto; font-weight: 700">TheTrybe</span></a>
+            <a href="user_info.html" class="no">I don't really know anything about <span style="font-family: Roboto; font-weight: 700">TheTrybe</span></a>
+        </div>
+    </div>
+    <script>
+        function confirm() {
+            const result = alert('You have 1 munite, 30 seconds to complete the assessment.☺')
+            if (result) {
+                preventDefault()
+            }else {
+                window.location.href = 'assess.html';
+            }
+        }
+    </script>
+</body>
+
+</html>
