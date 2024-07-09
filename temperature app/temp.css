@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "MuseoModerno";
+    /* text-align: left; */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e0e0e0;
+  background-image: linear-gradient(to bottom right, #e0e0e0 0%, #fff 70%, #e0e0e0 100%);
+  background-size: cover;
+  overflow: hidden;
+}
+.converter-container {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  outline: none;
+  width: 25%;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 500px;
+  margin-bottom: 20px;
+}
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+}
+label {
+  display: block;
+  padding-top: 12px;
+  text-align: left;
+  /* margin-bottom: 5px; */
+}
+input[type="number"] {
+  width: 40%;
+  /* float: inline-end; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  border-style: none;
+  border-bottom: 2px solid black;
+  border-radius: 0;
+}
